@@ -1,3 +1,4 @@
 export default (object) => {
-  return object.name;
+  const { name } = object;
+  return name;
 };
