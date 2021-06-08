@@ -16,6 +16,12 @@ export function capitalizeAndFilter(arr) {
 }
 
 export function fetchQuotes() {
-  return fetch('http://futuramaapi.herokuapp.com/api/quotes');
-  
+  return fetch('http://futuramaapi.herokuapp.com/api/quotes')
+    .then(response => response.json())
+    .then(data => ({
+      name: data[0].character,
+      text: data[0].quote,
+      image: data[0].image
+    }));
+
 }
