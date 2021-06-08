@@ -7,3 +7,7 @@ export function copyAndPush(arr, x) {
   copyArray.push(x);
   return [arr, copyArray];
 }
+
+export function capitalizeAndFilter(arr) {
+
+}
