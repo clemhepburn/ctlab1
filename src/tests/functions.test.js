@@ -22,7 +22,7 @@ describe('capitalizeAndFilter', () => {
   it('capitalizes all strings and filters out any that begins with f', () => {
     const example = ['folded like a sheet of paper', 'like fumes', 'Finale: I have turned on with shifting strands of light'];
     const poemArray = capitalizeAndFilter(example);
-    expect(poemArray).toEqual(['LIKE FUMES']);
+    expect(poemArray).toEqual(['Like fumes']);
   });
 });
 
