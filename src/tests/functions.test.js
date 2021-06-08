@@ -1,5 +1,5 @@
 import getName from '../functions.js';
-import copyAndPush from '../functions.js';
+import { copyAndPush } from '../functions.js';
 
 describe('getName', () => {
   it('gets the name', () => {
