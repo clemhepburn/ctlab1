@@ -1,6 +1,7 @@
 import getName from '../functions.js';
 import { copyAndPush } from '../functions.js';
-import { capitalizeAndFilter } from '../functions';
+import { capitalizeAndFilter } from '../functions.js';
+import { fetchQuotes } from '../functions.js';
 
 describe('getName', () => {
   it('gets the name', () => {
@@ -26,5 +27,14 @@ describe('capitalizeAndFilter', () => {
   });
 });
 
+
+describe('fetchQuotes', () => {
+  it('returns a single quote from the API', async () => {
+    const quote = await fetchQuotes();
+   
+    expect(quote).toEqual({ 'name':'Bender', 'text':'Bite my shiny metal ass.', 'image':'https://res.cloudinary.com/dzxqhkyqd/image/fetch/c_scale,w_500/https://res.cloudinary.com/dzxqhkyqd/image/upload/v1552429540/bender.png' });
+    
+  });
+});
 
 
