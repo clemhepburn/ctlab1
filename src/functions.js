@@ -1,3 +1,3 @@
 export default (object) => {
-  return object['name'];
+  return object.name;
 };
