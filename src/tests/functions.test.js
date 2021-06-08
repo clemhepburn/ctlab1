@@ -13,7 +13,7 @@ describe('copyAndPush', () => {
   it('copies the array and pushes a new value', () => {
     const numbers = [1, 2, 3];
     const newArray = copyAndPush(numbers, 4);
-    expect(newArray).toEqual([1, 2, 3, 4]);
+    expect(newArray).toEqual([numbers, [1, 2, 3, 4]]);
   });
 });
 
